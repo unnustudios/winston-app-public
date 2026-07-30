@@ -1,0 +1,83 @@
+/* Deliberately one small stylesheet with no build step, no framework and no fonts to fetch:
+   these two pages exist to be read and to load from anywhere, including a reviewer's browser
+   on a bad connection. Colours follow the app's own palette. */
+
+:root {
+  --bg: #12121c;
+  --surface: #1b1b28;
+  --text: #eceaf6;
+  --muted: #9a97b0;
+  --dim: #6f6c85;
+  --accent: #b5abfc;
+  --border: rgba(236, 234, 246, 0.09);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 2.4rem 0 0.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.6rem 0 0.4rem;
+  color: var(--text);
+}
+
+p, li { color: var(--muted); }
+li { margin-bottom: 0.4rem; }
+ul { padding-left: 1.2rem; }
+
+strong { color: var(--text); font-weight: 600; }
+em { color: var(--text); font-style: normal; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(181, 171, 252, 0.35); }
+a:hover { border-bottom-color: var(--accent); }
+
+code {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  font-size: 0.88em;
+  color: var(--text);
+}
+
+.lead { font-size: 1.05rem; color: var(--muted); margin-bottom: 0.5rem; }
+.meta { color: var(--dim); font-size: 0.85rem; margin-top: 0; }
+.back { margin: 0 0 1.6rem; font-size: 0.9rem; }
+.back a { border-bottom: none; color: var(--dim); }
+.back a:hover { color: var(--accent); }
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--border);
+}
+footer p { color: var(--dim); font-size: 0.85rem; margin: 0; }
