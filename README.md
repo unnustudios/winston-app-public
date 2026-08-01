@@ -20,18 +20,18 @@ containing nothing but the two pages avoids both.
 
 ## How it is served
 
-GitHub Pages, from the root of the default branch. Plain HTML and one stylesheet — no Jekyll (hence
+GitHub Pages, from the root of the default branch. Plain HTML and one stylesheet: no Jekyll (hence
 `.nojekyll`), no build step, no framework, and nothing fetched from anywhere else, so the pages
 load quickly and completely even on a poor connection.
 
 Once Pages is enabled the URLs are:
 
-- `https://unnustudios.github.io/winston-app-public/` — support
-- `https://unnustudios.github.io/winston-app-public/privacy.html` — privacy policy
+- Support: `https://unnustudios.github.io/winston-app-public/`
+- Privacy policy: `https://unnustudios.github.io/winston-app-public/privacy.html`
 
 ## Changing the policy
 
 The privacy policy describes what the app actually does, and the App Store privacy label describes
-the same facts in a different place. **They have to agree**, so the policy is not edited on its own
-— it changes when the app's data handling changes, and the date at the top of the page changes with
+the same facts in a different place. **They have to agree**, so the policy is not edited on its own.
+It changes when the app's data handling changes, and the date at the top of the page changes with
 it.
