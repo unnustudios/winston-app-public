@@ -1,14 +1,15 @@
 # winston-app-public
 
-The public pages for **Winston**, an iOS goal tracker: the privacy policy and the support page
-that the App Store listing links to.
+The public pages for **Winston**, an iOS goal tracker: the marketing page, the support page
+and the privacy policy that the App Store listing links to.
 
 | Page | File | Purpose |
 |---|---|---|
-| Support | [`index.html`](index.html) | The support URL in App Store Connect |
+| Marketing | [`index.html`](index.html) | The marketing URL in App Store Connect |
+| Support | [`support.html`](support.html) | The support URL in App Store Connect |
 | Privacy policy | [`privacy.html`](privacy.html) | The privacy policy URL, which is not waivable |
 
-The app itself is developed in a separate, private repository. This one exists only so those two
+The app itself is developed in a separate, private repository. This one exists only so those
 URLs can be served publicly without the source being public with them.
 
 ## Why it is a separate repo
@@ -26,7 +27,8 @@ load quickly and completely even on a poor connection.
 
 Once Pages is enabled the URLs are:
 
-- `https://unnustudios.github.io/winston-app-public/` — support
+- `https://unnustudios.github.io/winston-app-public/` — marketing
+- `https://unnustudios.github.io/winston-app-public/support.html` — support
 - `https://unnustudios.github.io/winston-app-public/privacy.html` — privacy policy
 
 ## Changing the policy
